@@ -2,6 +2,11 @@
 
 namespace GameSix
 {
+    public enum PowerUp
+    {
+        Health,
+        Shield
+    }
     class Program
     {
         static void Main(string[] args)
