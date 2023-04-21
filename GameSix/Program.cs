@@ -44,6 +44,12 @@ namespace GameSix
             God.TakeDamage(30);
             Console.WriteLine($"\nDhealth: {God.GetHealth()}");
             Console.WriteLine($"nDShield name: {God.GetShield()}");
+            int powerUpCount = Foe.GetPowerUpCount();
+            Console.WriteLine($"\nPowerup count: {powerUpCount}");
+
+
+            Console.WriteLine("Thank you for using the program!");
+
 
         }
     }

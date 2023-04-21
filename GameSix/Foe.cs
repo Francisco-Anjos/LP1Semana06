@@ -67,6 +67,8 @@ namespace GameSix
                 if (shield > 100) shield = 100;
 
             }
+            powerUpCount++;
+            
             
                 
             
