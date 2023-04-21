@@ -8,7 +8,7 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
-
+         private static int powerUpCount;
         // Name
         public string GetName()
         {
@@ -28,6 +28,11 @@ namespace GameSix
         {
             return shield;   
         }
+        public static int GetPowerUpCount()
+        {
+            return powerUpCount;
+        }
+
         //Constructor
         public Foe(string name)
         {
