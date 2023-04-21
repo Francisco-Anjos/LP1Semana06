@@ -8,11 +8,25 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
-        
+
         // Name
         public string GetName()
         {
             return name;   
+        }
+        public void SetName(string name)
+        {
+            this.name = name.Trim();
+        }
+        // Health
+         public float GetHealth()
+        {
+            return health;   
+        }
+        //Shield
+         public float GetShield()
+        {
+            return shield;   
         }
         //Constructor
         public Foe(string name)
