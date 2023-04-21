@@ -8,6 +8,12 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
+        
+        // Name
+        public string GetName()
+        {
+            return name;   
+        }
         //Constructor
         public Foe(string name)
         {
@@ -15,5 +21,18 @@ namespace GameSix
             health = 100;
             shield = 0;
         }
+        // Damage taking
+        public void TakeDamage(float damage)
+        {
+            shield -= damage;
+            if (shield < 0)
+            {
+                float DamageStillToInflict = -shield;
+                shield =0;
+                health -=DamageStillToInflict;
+                if (health < 0) health = 0;
+            }
+        }
+
     }
 }
