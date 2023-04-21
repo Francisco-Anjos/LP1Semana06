@@ -46,6 +46,25 @@ namespace GameSix
                 health -=DamageStillToInflict;
                 if (health < 0) health = 0;
             }
+            
+        }
+        //PowerUp effects
+        public void PickupPowerUp(PowerUp p, float value)
+        {
+            if (p == PowerUp.Health)
+            {
+                health += value;
+                if (health > 100) health = 100;
+            }
+            else if (p == PowerUp.Shield)
+            {
+                shield +=value;
+                if (shield > 100) shield = 100;
+
+            }
+            
+                
+            
         }
 
     }
